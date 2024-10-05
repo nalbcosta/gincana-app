@@ -16,7 +16,7 @@ body{
     position: relative;
     transform: translate(-50%);
     opacity: 50%;
-    width: 40dvw;
+    width: 35vmax;
     filter: blur(2px) saturate(3);
 }
 
@@ -24,7 +24,7 @@ body{
     width: 10dvw;
     position: absolute;
     z-index: 1;
-    top: 78%;
+    top: 43vmin;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -58,6 +58,18 @@ body{
     text-decoration: none;
     font-weight: 500;
     color: whitesmoke;
+    padding: 15px;
+    text-align: center;
+    width: 50vmin;
+    border-radius: 0.5em;
+    background-color: rgba(95, 114, 130, 0.32);
+    transition: all ease-in-out 0.1s;
+}
+
+.opt-wrapper a:hover{
+    font-weight: 700;
+    color: whitesmoke;
+    background-color: rgba(166, 200, 227, 0.32);
 }
 
 p{
@@ -69,4 +81,16 @@ p{
 
 h1{
     color: whitesmoke;
+}
+
+@media screen and (max-width: 800px){
+    .warrior{
+        width: 100vmin;
+        height: 210vmin;       
+    }
+
+    .logo{
+        top: 85vmin;  
+        width: 35vmin;     
+    }
 }
